@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>** CXK **</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0a0f1f 0%, #000814 100%);
+      color: #e0f7ff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+      background: linear-gradient(90deg, #00aaff, #0077ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #0077ff80; }
+      to { text-shadow: 0 0 25px #00aaffcc; }
+    }
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-top: 25px;
+      border: 3px solid #00aaff;
+      box-shadow: 0 0 25px #00aaff80;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 15px;
+      color: #a8d8ff;
+      letter-spacing: 1px;
+    }
+
+    .media-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 25px;
+      width: 90%;
+      max-width: 700px;
+    }
+
+    .media-box {
+      flex: 1 1 200px;
+      background: rgba(0, 50, 100, 0.25);
+      border: 1px solid rgba(0, 170, 255, 0.3);
+      border-radius: 15px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+    }
+
+    .media-box:hover {
+      transform: translateY(-8px);
+      background: rgba(0, 170, 255, 0.2);
+      box-shadow: 0 0 20px #00aaff80;
+      border-color: #00aaff;
+    }
+
+    .media-box a {
+      text-decoration: none;
+      color: #e0f7ff;
+      font-weight: 600;
+      font-size: 1.2em;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .media-box a::before {
+      content: "⚡";
+      color: #00aaff;
+      font-size: 1.3em;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 30px 0;
+      font-size: 0.9em;
+      color: #7fcfff;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .media-box {
+        width: 90%;
+      }
+
+      .media-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome To Website CXK</h1>
+
+  <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/44b28b46e96795a8c201a36abc867fb5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=55044415&x-expires=1761829200&x-signature=EcdLuNvwP%2F9qKUuWKLNwdQUTZVo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my" alt="Foto CXK" />
+  <p>@CXKcalvin</p>
+
+  <div class="media-container">
+    <div class="media-box">
+      <a href="https://www.youtube.com/@CXK_calvin" target="_blank">YouTube</a>
+    </div>
+    <div class="media-box">
+      <a href="https://www.instagram.com/cxk_calvin/" target="_blank">Instagram</a>
+    </div>
+    <div class="media-box">
+      <a href="https://saweria.co/Cxkcalvin" target="_blank">Saweria</a>
+    </div>
+  </div>
+
+<a href="http://localhost:3000/login/tiktok" target="_blank">
+  <button>Login dengan TikTok</button>
+</a>
+
+
+
+  <footer>
+    © 2025 CXK Website. All rights reserved.
+  </footer>
+</body>
+</html>
